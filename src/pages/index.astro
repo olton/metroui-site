@@ -195,18 +195,20 @@ import HeroImage from "../../public/images/strategy.svg"
             </div>
             <div class="row mt-4">
                 <div class="cell-lg-6 border bd-default border-radius-10 p-6">
-                    <div class="text-subheader mb-2 border-bottom bd-default pb-4">:root</div>
+                    <div class="text-subheader mb-2 border-bottom bd-default pb-4">
+                        <span class="mif-sun place-right"></span>
+                        :root
+                    </div>
                     <div>
                         Metro UI provide dozens of variables for colors, font styles, and more at a <kbd>:root</kbd> level for use anywhere.
                         Variables are divided into global and component variables.
-                        <p>Component variables start with the name of the component and are followed by the name of the property.
+                        <p>Variables names start with the component name and are followed by the name of the property.
                     </div>
                     <div class="border bd-default mt-4">
                         <Code code={`
     :root {
         --body-background: #ffffff;
         --body-color: #191919;
-        --body-color-secondary: #a2a5b1;
         --border-color: #e8e8e8;
         --link-color: #5a87cb;
         --link-color-hover: #0056B3FF; 
@@ -215,19 +217,21 @@ import HeroImage from "../../public/images/strategy.svg"
                     </div>
                 </div>
                 <div class="cell-lg-6 border bd-default border-radius-10 p-6">
-                    <div class="text-subheader mb-2 border-bottom bd-default pb-4">:dark-side</div>
+                    <div class="text-subheader mb-2 border-bottom bd-default pb-4">
+                        <span class="mif-moon place-right"></span>
+                        :dark-side
+                    </div>
                     <div>
                         All Metro UI components support <b>dark ↔ light</b> mode.
                         In Metro UI <kbd>light</kbd> mode is default.
-                        <p>For <kbd>dark</kbd> mode you can define variables inside a <kbd>.dark-side</kbd> class.
-                        <p>To switch to <kbd>dark</kbd> mode you must add class <b>.dark-side</b> to <kbd>html</kbd> tag.
+                        For <kbd>dark</kbd> mode you can define variables inside a <kbd>.dark-side</kbd> class.
+                        <p>To switch to <kbd>dark</kbd> mode you must add class <b>.dark-side</b> to <kbd>html</kbd> tag. Also you can use special components that switch mode.
                     </div>
                     <div class="border bd-default mt-4">
                         <Code code={`
     .dark-side {
         --body-background: #1e1f22;
         --body-color: #dbdfe7;
-        --body-color-secondary: #c0c0c0;
         --border-color: #4a4d51;
         --link-color: #5a87cb;
         --link-color-hover: #0056B3FF;
@@ -236,7 +240,7 @@ import HeroImage from "../../public/images/strategy.svg"
                     </div>
                 </div>
             </div>
-            <div class="remark success rounded mt-4">
+            <div class="remark rounded mt-4">
                 <span class="mif-report icon"></span>
                 <div>
                     You can override css variables not only in the <kbd>:root</kbd>.
