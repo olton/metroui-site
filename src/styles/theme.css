@@ -1,0 +1,67 @@
+:root {
+    --appbar-item-background-hover: #005596;
+    --appbar-item-color-hover: #ffffff;
+    --kbd-background: #ff9e9e;
+}
+
+@font-face {
+    font-family: "eUkraine Light";
+    src: url('/fonts/e-Ukraine-Light.woff2') format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "eUkraine Medium";
+    src: url('/fonts/e-Ukraine-Medium.woff2') format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "eUkraine Regular";
+    src: url('/fonts/e-Ukraine-Regular.woff2') format("woff2");
+    font-style: normal;
+    font-display: swap;}
+
+.text-header {
+    line-height: 1;
+    font-size: 26px;
+    font-family: "eUkraine Medium", sans-serif;
+}
+
+.text-subheader {
+    font-size: 20px;
+    line-height: 1;
+    font-family: "eUkraine Light", sans-serif;
+}
+
+.text-regular {
+    font-size: 16px;
+    font-family: "eUkraine Regular", sans-serif;
+}
+
+.text-light {
+    font-size: 16px;
+    font-family: "eUkraine Light", sans-serif;
+}
+
+.text-logo {
+    white-space: nowrap;
+}
+
+body {
+    font-family: "eUkraine Regular", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    .text-header {
+        font-size: 56px;
+    }
+    .text-subheader {
+        font-size: 28px;
+    }
+    .text-regular {
+        font-size: 20px;
+    }
+}

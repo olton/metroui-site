@@ -1,0 +1,20 @@
+---
+import BaseHead from "../components/BaseHead.astro"
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+const { title, action } = Astro.props
+---
+<html lang="en" class="scrollbar-type-2">
+<head>
+    <BaseHead base="/"/>
+    <title>{title}</title>
+</head>
+<body class="cloak" style="padding-top: 78px;">
+<Navbar action={action} />
+<main id="root">
+    <slot />
+</main>
+<Footer/>
+</body>
+</html>

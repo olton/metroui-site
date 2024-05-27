@@ -1,0 +1,25 @@
+---
+const { action } = Astro.props
+---
+<nav data-role="appbar" data-expand-point="lg" class="pt-4 pb-4">
+    <a href="/" class="app-bar-item-static">
+        <div class="e-head text-logo enlarge-2" style="line-height: 1">Metro UI<br/>Components Library</div>
+    </a>
+
+    <button class="hamburger menu-down" onclick="this.parentNode.classList.toggle('active'); this.classList.toggle('active')">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+
+    <ul class="app-bar-menu ml-auto">
+        <li class:list={[action === 'home' ? 'active' : '']}><a href="/">Home</a></li>
+        <li class:list={[action === 'quick' ? 'active' : '']}><a href="/quick-start">Quick Start</a></li>
+        <li class:list={[action === 'blog' ? 'active' : '']}><a href="/blog">Blog</a></li>
+        <li><a href="https://docs.metroui.org.ua">Docs</a></li>
+        <li><a href="https://github.com/olton/Metro-UI-CSS">GitHub</a></li>
+    </ul>
+    <div class="app-bar-item-static ml-auto-fs ml-0-lg">
+        <input type="checkbox" data-role="theme-switcher" data-save-state="true"/>
+    </div>
+</nav>

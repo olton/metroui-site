@@ -1,0 +1,27 @@
+{
+  "name": "metro-ui-site",
+  "type": "module",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "build:metro": "rollup -c",
+    "watch:metro": "rollup -c -w"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@olton/metroui": "^5.0.6",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "astro": "^4.8.4",
+    "autoprefixer": "^10.4.19",
+    "less": "^4.2.0",
+    "rollup": "^4.17.2",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-progress": "^1.1.2",
+    "typescript": "^5.4.5"
+  }
+}
