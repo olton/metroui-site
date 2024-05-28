@@ -2,6 +2,8 @@
     --appbar-item-background-hover: #005596;
     --appbar-item-color-hover: #ffffff;
     --kbd-background: #ff9e9e;
+    --secondary-block-background: #f6dedd;
+    --secondary-block-color: #191919;
 }
 
 @font-face {
@@ -22,7 +24,13 @@
     font-family: "eUkraine Regular";
     src: url('/fonts/e-Ukraine-Regular.woff2') format("woff2");
     font-style: normal;
-    font-display: swap;}
+    font-display: swap;
+}
+
+.bg-secondary-block {
+    background-color: var(--secondary-block-background);
+    color: var(--secondary-block-color);
+}
 
 .text-header {
     line-height: 1;
