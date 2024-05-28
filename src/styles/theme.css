@@ -36,6 +36,12 @@
     font-family: "eUkraine Light", sans-serif;
 }
 
+.text-subheader-secondary {
+    font-size: 16px;
+    line-height: 1;
+    font-family: "eUkraine Medium", sans-serif;
+}
+
 .text-regular {
     font-size: 16px;
     font-family: "eUkraine Regular", sans-serif;
