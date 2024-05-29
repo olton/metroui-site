@@ -2,7 +2,13 @@
 import Page from "../layouts/DefaultPage.astro"
 import {Image} from "astro:assets"
 import { Code } from 'astro:components'
-import IconsIMages from "../../assets/icons.png"
+import workReserve from "../assets/images/works/reserve-plus.jpg"
+import workPandora from "../assets/images/works/pandora.jpg"
+import workCrypto from "../assets/images/works/cryptoscamalert.jpg"
+import workKorzh from "../assets/images/works/korzh.jpg"
+import workMinataur from "../assets/images/works/minataur.jpg"
+import workMirohost from "../assets/images/works/mirohost.jpg"
+import workAistant from "../assets/images/works/aistant.jpg"
 ---
 <Page title="Metro UI - Expressive library for impressive coding">
     <section class="container-fluid">
@@ -232,7 +238,7 @@ import IconsIMages from "../../assets/icons.png"
                 </div>
                 <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
                     <div class="d-flex flex-column flex-no-wrap flex-align-center">
-                        <div class="text-header pos-absolute pos-top-right fg-red">4</div>
+                        <div class="text-header pos-absolute pos-top-right fg-red">5</div>
                         <Image src="/images/icons.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
                         <div class="mt-4 text-subheader-secondary">Icons</div>
                         <div class="reduce-4 text-center mt-4">
@@ -311,6 +317,144 @@ import IconsIMages from "../../assets/icons.png"
         </div>
     </section>
 
+    <section class="container-fluid mt-20 mb-10 bg-secondary-block pt-10 pb-10">
+        <div class="container">
+            <h1 class="text-header"><span class="reduce-3">&lcub;Special&rcub;</span></h1>
+            <div>
+                Metro UI includes special js modules to work with date and time, strings, colors, html, animations, and hooks.
+            </div>
+            <div class="row mt-10">
+                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                    <div class="d-flex flex-column flex-no-wrap flex-align-center h-100">
+                        <div class="text-header pos-absolute pos-top-right fg-red">1</div>
+                        <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
+                        <div class="mt-4 text-subheader-secondary">Datetime</div>
+                        <div class="reduce-4 text-center mt-4 mb-4">
+                            Class to work with date and time: parsing, formatting, converting, calculating, ...
+                        </div>
+                        <div class="mt-auto">
+                            <a class="fg-white" href="https://github.com/olton/datetime">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                    <div class="d-flex flex-column flex-no-wrap flex-align-center h-100">
+                        <div class="text-header pos-absolute pos-top-right fg-red">2</div>
+                        <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
+                        <div class="mt-4 text-subheader-secondary">Str</div>
+                        <div class="reduce-4 text-center mt-4 mb-4">
+                            Class and fabric function to work with string: counting, transforming, checking, matching...
+                        </div>
+                        <div class="mt-auto">
+                            <a class="fg-white" href="https://github.com/olton/string">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                    <div class="d-flex flex-column flex-no-wrap flex-align-center h-100">
+                        <div class="text-header pos-absolute pos-top-right fg-red">3</div>
+                        <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
+                        <div class="mt-4 text-subheader-secondary">Farbe</div>
+                        <div class="reduce-4 text-center mt-4 mb-4">
+                            Class and fabric function to work with colors: parsing, transforming, checking, matching...
+                        </div>
+                        <div class="mt-auto">
+                            <a class="fg-white" href="https://github.com/olton/farbe">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                    <div class="d-flex flex-column flex-no-wrap flex-align-center h-100">
+                        <div class="text-header pos-absolute pos-top-right fg-red">4</div>
+                        <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
+                        <div class="mt-4 text-subheader-secondary">Html</div>
+                        <div class="reduce-4 text-center mt-4 mb-4">
+                            A set of function to create html elements via javascript...
+                        </div>
+                        <div class="mt-auto">
+                            <a class="fg-white" href="https://github.com/olton/html">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                    <div class="d-flex flex-column flex-no-wrap flex-align-center h-100">
+                        <div class="text-header pos-absolute pos-top-right fg-red">5</div>
+                        <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
+                        <div class="mt-4 text-subheader-secondary">Animation</div>
+                        <div class="reduce-4 text-center mt-4 mb-4">
+                            Class to add animation to html elements and numeric values...
+                        </div>
+                        <div class="mt-auto">
+                            <a class="fg-white" href="https://github.com/olton/animation">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10">
+                Also Metro UI provides a special hooks functions: <kbd>HOOK.useState()</kbd>, <kbd>HOOK.useEvent()</kbd>, and <kbd>HOOK.useEffect()</kbd>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid mt-20 mb-10">
+        <div class="container">
+            <h1 class="text-header"><span class="reduce-3">Metro UI <span class="fg-red">&lt;Action&gt;</span></span></h1>
+            <div class="row mt-10">
+                <div class="cell-md-3 cell-sm-6">
+                    <div class="work-preview">
+                        <a href="https://minataur.net">
+                            <Image src={workMinataur} alt="Minataur.net" style="width: 100%; height: auto;"/>
+                        </a>
+                    </div>
+                    <div class="arrow"><span class="mif-arrow-right mif-4x"></span></div>
+                </div>
+                <div class="cell-md-3 cell-sm-6">
+                    <div class="work-preview">
+                        <a href="https://themes.org.ua/mirohost">
+                            <Image src={workMirohost} alt="Mirohost.net" style="width: 100%; height: auto;"/>
+                        </a>
+                    </div>
+                    <div class="arrow"><span class="mif-arrow-right mif-4x"></span></div>
+                </div>
+                <div class="cell-md-3 cell-sm-6">
+                    <div class="work-preview">
+                        <a href="https://korzh.com">
+                            <Image src={workKorzh} alt="Korzh.com" style="width: 100%; height: auto;"/>
+                        </a>
+                    </div>
+                    <div class="arrow"><span class="mif-arrow-right mif-4x"></span></div>
+                </div>
+                <div class="cell-md-3 cell-sm-6">
+                    <div class="work-preview">
+                        <a href="https://themes.org.ua/aistant">
+                            <Image src={workAistant} alt="Aistant.com" style="width: 100%; height: auto;"/>
+                        </a>
+                    </div>
+                    <div class="arrow"><span class="mif-arrow-right mif-4x"></span></div>
+                </div>
+                <div class="cell-md-3 cell-sm-6">
+                    <div class="work-preview">
+                        <a href="https://cryptoscamalert.com">
+                            <Image src={workCrypto} alt="Korzh.com" style="width: 100%; height: auto;"/>
+                        </a>
+                    </div>
+                    <div class="arrow"><span class="mif-arrow-right mif-4x"></span></div>
+                </div>
+                <div class="cell-md-3 cell-sm-6">
+                    <div class="work-preview">
+                        <a href="https://themes.org.ua/pandora">
+                            <Image src={workPandora} alt="Korzh.com" style="width: 100%; height: auto;"/>
+                        </a>
+                    </div>
+                    <div class="arrow"><span class="mif-arrow-right mif-4x"></span></div>
+                </div>
+                <div class="cell-md-3 cell-sm-6 border bd-default no-overflow d-flex flex-align-center flex-justify-center">
+                    <div class="p-10">Maybe your site will be next?...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="container-fluid mt-20 mb-10">
         <div class="container">
             <h1 class="text-header"><span class="reduce-3">Metro <span class="fg-red">&lt;Icons&gt;</span></span></h1>
@@ -322,9 +466,22 @@ import IconsIMages from "../../assets/icons.png"
         </div>
     </section>
 
-    <!--
-Personalize it with Metro Icons Font
-Tech support
--->
+    <section class="container-fluid prefooter pt-4 pb-4">
+        <div class="container">
+            <div>
+                <div class="text-center text-subheader">
+                    Technical Partners
+                </div>
+                <ul class="inline-list d-flex flex-justify-center">
+                    <li><a href="https://keycdn.com"><Image src="/images/logos/keycdn.svg" width="200" height="200" alt="KeyCDN.com"/></a></li>
+                    <li class="ml-10 mr-10"><a href="https://jetbrains.com"><Image src="/images/logos/jetbrains.svg" width="200" height="200" alt="JetBrains.com"/></a></li>
+                    <li><a href="https://mirohost.net"><Image src="/images/logos/mirohost.svg" width="200" height="200" alt="Mirohost.net"/></a></li>
+                </ul>
+                <div class="text-center">
+                    Thank you for tech support
+                </div>
+            </div>
+        </div>
+    </section>
 
 </Page>

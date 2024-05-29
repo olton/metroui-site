@@ -41,6 +41,29 @@ body {
     }
 }
 
+.work-preview {
+    border: 1px solid var(--border-color);
+    transition: border-radius .3s;
+    overflow: hidden;
+    z-index: 1;
+    &:hover {
+        border-bottom-right-radius: 120px;
+    }
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    color: #df6e68!important;
+    z-index: 0;
+}
+
+.work-preview:hover ~ .arrow {
+    opacity: 1;
+}
+
 @media screen and (min-width: 992px) {
     .container {
         padding-left: 12px!important;

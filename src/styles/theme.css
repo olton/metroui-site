@@ -4,6 +4,13 @@
     --kbd-background: #ff9e9e;
     --secondary-block-background: #f6dedd;
     --secondary-block-color: #191919;
+    --prefooter-background: #f1f1f1;
+    --prefooter-color: #191919;
+}
+
+.dark-side {
+    --prefooter-background: #27282e;
+    --prefooter-color: #ffffff;
 }
 
 @font-face {
@@ -66,6 +73,11 @@
 
 body {
     font-family: "eUkraine Regular", sans-serif;
+}
+
+.prefooter {
+    background-color: var(--prefooter-background);
+    color: var(--prefooter-color);
 }
 
 @media screen and (min-width: 768px) {
