@@ -43,12 +43,12 @@ import workAistant from "../assets/images/works/aistant.jpg"
                     <div class="cell-md-3"></div>
                     <div class="cell-md-6">
                         <div class="d-flex flex-row">
-                            <code class="m-1 p-2 border bd-default text-center w-100 c-pointer" data-copy-to-clipboard="npm i @olton/metroui">
+                            <code class="m-1 p-2 border bd-default text-center w-100 c-pointer alert" data-copy-to-clipboard="npm i @olton/metroui">
                                 npm i @olton/metroui
                                 <div class="reduce-4">click to copy to clipboard</div>
                             </code>
 
-                            <code class="m-1 p-2 border bd-default text-center w-100 c-pointer" onclick="window.location.href = `/quick-start`">
+                            <code class="m-1 p-2 border bd-default text-center w-100 c-pointer" style="background-color: #2BC4CE; color: #fff;" onclick="window.location.href = `https://docs.metroui.org.ua`">
                                 Quick Start
                                 <div class="reduce-4">click to open</div>
                             </code>
@@ -59,6 +59,17 @@ import workAistant from "../assets/images/works/aistant.jpg"
             </div>
         </div>
     </section>
+
+    <section class="container-fluid mb-10 accent-block">
+        <div class="container">
+            <div class="p-10-md p-4-fs enlarge-3 text-just">
+                Metro UI is an free, open source, html-first toolkit for developing web sites with HTML, CSS, and JS.
+                With Metro UI, you can easily and quickly make a site from prototype to production.
+                Metro UI includes general styles, responsive grid, layouts, typography, 100+ components and javascript routines, 800+ built-in icons.
+            </div>
+        </div>
+    </section>
+
 
     <section class="container-fluid mb-10">
         <div class="container">
@@ -121,10 +132,10 @@ import workAistant from "../assets/images/works/aistant.jpg"
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="cell-lg-6 border bd-default border-radius-10 p-6">
-                    <div class="feature-card">
+                <div class="cell-md-4 border bd-default border-radius-10 p-6">
+                    <div class="feature-card flex-column flex-align-center">
                         <div class="feature-card__image">
-                            <Image src="/images/cdn.svg" alt="" width="200" height="200"/>
+                            <Image src="/images/cdn.svg" alt="" width="100" height="160"/>
                         </div>
                         <div>
                             <div class="text-subheader mb-2 border-bottom bd-default pb-4">CDN</div>
@@ -132,14 +143,25 @@ import workAistant from "../assets/images/works/aistant.jpg"
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-6 border bd-default border-radius-10 p-6">
-                    <div class="feature-card">
+                <div class="cell-md-4 border bd-default border-radius-10 p-6">
+                    <div class="feature-card flex-column flex-align-center">
                         <div class="feature-card__image">
-                            <Image src="/images/process.svg" alt="" width="200" height="200"/>
+                            <Image src="/images/process.svg" alt="" width="100" height="160"/>
                         </div>
                         <div>
                             <div class="text-subheader mb-2 border-bottom bd-default pb-4">NPM</div>
                             <div>Install Metro UI source Less and JavaScript files via <a href="https://npmjs.com/@olton/metroui">npm</a> and build your custom set.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-md-4 border bd-default border-radius-10 p-6">
+                    <div class="feature-card flex-column flex-align-center">
+                        <div class="feature-card__image">
+                            <Image src="/images/upload.svg" alt="" width="100" height="160"/>
+                        </div>
+                        <div>
+                            <div class="text-subheader mb-2 border-bottom bd-default pb-4">Download</div>
+                            <div>Download and use Metro UI source Less and JavaScript files from <a href="https://github.com/olton/Metro-UI-CSS">GitHub</a>.</div>
                         </div>
                     </div>
                 </div>
@@ -186,9 +208,9 @@ import workAistant from "../assets/images/works/aistant.jpg"
     </section>
 
 
-    <section class="container-fluid mt-20 mb-10 bg-secondary-block pt-10 pb-10">
+    <section class="container-fluid mt-20 mb-10 accent-block pt-10 pb-10">
         <div class="container">
-            <div class="text-header">Lib.Structure:</div>
+            <div class="text-header">&lcub;Structure&rcub;</div>
             <div class="mt-4">
                 Metro UI offers the developer utilities functions, 6 specialized modules, and more than 100 components that do not require jQuery.
                 Moreover, Metro UI contains the m4q module, which provides the user with most of jQuery's functionality for interacting with the DOM.
@@ -196,7 +218,7 @@ import workAistant from "../assets/images/works/aistant.jpg"
                 <p><p>Metro UI consists of five parts:
             </div>
             <div class="row mt-4">
-                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                <div class="cell-lg-one-fifth cell-sm-6 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
                     <div class="d-flex flex-column flex-no-wrap flex-align-center">
                         <div class="text-header pos-absolute pos-top-right fg-red">1</div>
                         <Image src="/images/css.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
@@ -206,7 +228,7 @@ import workAistant from "../assets/images/works/aistant.jpg"
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                <div class="cell-lg-one-fifth cell-sm-6 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
                     <div class="d-flex flex-column flex-no-wrap flex-align-center">
                         <div class="text-header pos-absolute pos-top-right fg-red">2</div>
                         <Image src="/images/javascript.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
@@ -216,7 +238,7 @@ import workAistant from "../assets/images/works/aistant.jpg"
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                <div class="cell-lg-one-fifth cell-sm-6 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
                     <div class="d-flex flex-column flex-no-wrap flex-align-center">
                         <div class="text-header pos-absolute pos-top-right fg-red">3</div>
                         <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
@@ -226,7 +248,7 @@ import workAistant from "../assets/images/works/aistant.jpg"
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                <div class="cell-lg-one-fifth cell-sm-6 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
                     <div class="d-flex flex-column flex-no-wrap flex-align-center">
                         <div class="text-header pos-absolute pos-top-right fg-red">4</div>
                         <Image src="/images/product-manager.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
@@ -236,7 +258,7 @@ import workAistant from "../assets/images/works/aistant.jpg"
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                <div class="cell-lg-one-fifth cell-sm-6 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
                     <div class="d-flex flex-column flex-no-wrap flex-align-center">
                         <div class="text-header pos-absolute pos-top-right fg-red">5</div>
                         <Image src="/images/icons.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
@@ -317,14 +339,15 @@ import workAistant from "../assets/images/works/aistant.jpg"
         </div>
     </section>
 
-    <section class="container-fluid mt-20 mb-10 bg-secondary-block pt-10 pb-10">
+    <section class="container-fluid mt-20 mb-10 accent-block pt-10 pb-10">
         <div class="container">
             <h1 class="text-header"><span class="reduce-3">&lcub;Special&rcub;</span></h1>
             <div>
                 Metro UI includes special js modules to work with date and time, strings, colors, html, animations, and hooks.
+                These modules were designed specifically to achieve the goals when creating Metro UI, so they should also help you achieve your goals.
             </div>
             <div class="row mt-10">
-                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                <div class="cell-lg-3 cell-sm-6 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
                     <div class="d-flex flex-column flex-no-wrap flex-align-center h-100">
                         <div class="text-header pos-absolute pos-top-right fg-red">1</div>
                         <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
@@ -337,7 +360,7 @@ import workAistant from "../assets/images/works/aistant.jpg"
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                <div class="cell-lg-3 cell-sm-6 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
                     <div class="d-flex flex-column flex-no-wrap flex-align-center h-100">
                         <div class="text-header pos-absolute pos-top-right fg-red">2</div>
                         <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
@@ -350,7 +373,7 @@ import workAistant from "../assets/images/works/aistant.jpg"
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                <div class="cell-lg-3 cell-sm-6 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
                     <div class="d-flex flex-column flex-no-wrap flex-align-center h-100">
                         <div class="text-header pos-absolute pos-top-right fg-red">3</div>
                         <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
@@ -363,7 +386,7 @@ import workAistant from "../assets/images/works/aistant.jpg"
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                <div class="cell-lg-3 cell-sm-6 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
                     <div class="d-flex flex-column flex-no-wrap flex-align-center h-100">
                         <div class="text-header pos-absolute pos-top-right fg-red">4</div>
                         <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
@@ -376,7 +399,7 @@ import workAistant from "../assets/images/works/aistant.jpg"
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-one-fifth cell-sm-4 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                <div class="cell-lg-3 cell-sm-6 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
                     <div class="d-flex flex-column flex-no-wrap flex-align-center h-100">
                         <div class="text-header pos-absolute pos-top-right fg-red">5</div>
                         <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
@@ -389,9 +412,27 @@ import workAistant from "../assets/images/works/aistant.jpg"
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="mt-10">
-                Also Metro UI provides a special hooks functions: <kbd>HOOK.useState()</kbd>, <kbd>HOOK.useEvent()</kbd>, and <kbd>HOOK.useEffect()</kbd>
+                <div class="cell-lg-3 cell-sm-6 border bd-red border-radius-10 p-6 bg-lightRed fg-white">
+                    <div class="d-flex flex-column flex-no-wrap flex-align-center h-100">
+                        <div class="text-header pos-absolute pos-top-right fg-red">6</div>
+                        <Image src="/images/module.svg" alt="" width="48" height="48" style="transform: scale(1.4)"/>
+                        <div class="mt-4 text-subheader-secondary">Hooks</div>
+                        <div class="reduce-4 text-center mt-4 mb-4">
+                            Special hook functions: useState, useEvent, useEffect.
+                        </div>
+                        <div class="mt-auto">
+                            <a class="fg-white" href="https://github.com/olton/hooks">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-lg-6 cell-sm-12 border bd-default border-radius-10 p-6">
+                    <div class="d-flex flex-column flex-no-wrap flex-align-center flex-justify-center h-100">
+                        <div>
+                            If you're missing something, tell me, and maybe it will appear in the Metro UI.
+                            Join the <a class="d-inline-block" href="https://github.com/olton/Metro-UI-CSS/discussions">Discussion!</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

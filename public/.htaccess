@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Redirect 302 /index.html https://korzh.com/metroui/
+
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}

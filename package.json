@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "build:metro": "rollup -c",
-    "watch:metro": "rollup -c -w"
+    "watch:metro": "rollup -c -w",
+    "deploy": "npm run build && node ./deploy.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
@@ -18,6 +19,8 @@
     "@rollup/plugin-terser": "^0.4.4",
     "astro": "^4.8.4",
     "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
+    "ftp-deploy": "^2.4.7",
     "less": "^4.2.0",
     "rollup": "^4.17.2",
     "rollup-plugin-postcss": "^4.0.2",

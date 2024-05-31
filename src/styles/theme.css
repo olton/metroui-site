@@ -6,11 +6,15 @@
     --secondary-block-color: #191919;
     --prefooter-background: #f1f1f1;
     --prefooter-color: #191919;
+    --accent-block-background: #fff8f8;
+    --accent-block-color: #191919;
 }
 
 .dark-side {
     --prefooter-background: #27282e;
     --prefooter-color: #ffffff;
+    --accent-block-background: #27282e;
+    --accent-block-color: #ffffff;
 }
 
 @font-face {
@@ -32,6 +36,11 @@
     src: url('/fonts/e-Ukraine-Regular.woff2') format("woff2");
     font-style: normal;
     font-display: swap;
+}
+
+.accent-block {
+    background-color: var(--accent-block-background);
+    color: var(--accent-block-color);
 }
 
 .bg-secondary-block {
