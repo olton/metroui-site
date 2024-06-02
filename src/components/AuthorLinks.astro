@@ -1,0 +1,16 @@
+---
+const {authors} = Astro.props
+---
+<ul class="author-links">
+    {
+        authors.map(a => <li>
+                             <img src={a.data.photo} alt={a.data.name}/>
+                             <div>
+                                 <a href={a.data.github} class="author-name">{a.data.name}</a>
+                                 <div class="author-role">{a.data.role}</div>
+                             </div>
+                         </li>
+        )
+
+    }
+</ul>

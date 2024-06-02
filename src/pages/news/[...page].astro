@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content'
+import PageLayout from "../../layouts/DefaultPage.astro"
+import Pagination from "../../components/Pagination.astro";
+import {filterPosts, shuffleArray, tagsWeight} from "../../js/utils.js";
+import PostLinks from "../../components/PostLinks.astro";
+import NewsCard from "../../components/NewsCard.astro";
+
+const allNews = filterPosts(await getCollection('news'))
+
+export async function getStaticPaths({ paginate }) {
+    const posts = filterPosts(await getCollection('news'));
+
+    return paginate(posts, {
+        pageSize: 10,
+    })
+}
+const { page } = Astro.props;
+---
+<PageLayout title="Kozrh's News">
+    <section class="container-fluid border-top bd-default pt-10">
+        <div class="container">
+            <div class="row">
+                <div class="cell-md-9">
+                    <div class="pr-10">
+                        {
+                            page.data.map( (post) => <NewsCard {post} />)
+                        }
+                    </div>
+                    <div>
+                        <Pagination length={page.lastPage}
+                                    currentUrl={page.url.current}
+                                    currentPage={page.currentPage}
+                                    firstUrl={`/news`}
+                                    prevUrl={page.url.prev}
+                                    nextUrl={page.url.next}
+                                    lastUrl={`/news/${page.lastPage}`}
+                        />
+                    </div>
+                </div>
+                <div class="cell-md-3">
+                    <div class="sidebar border-left bd-default pl-4 pr-4">
+                        <h1 class="">News</h1>
+
+                        <div class="blog-sidebar-group">
+                            <div class="text-bold border-bottom bd-default">Total News</div>
+                            <div class="h1 text-center">{allNews.length}</div>
+                        </div>
+
+                        <div class="blog-sidebar-group">
+                            <div class="text-bold border-bottom bd-default">RSS Feeds</div>
+                            <ul class="rss-feeds">
+                                <li><a href="/blog.xml">Blog Posts</a></li>
+                                <li><a href="/news.xml">News Feed</a></li>
+                            </ul>
+                            <div class="bg-light text-small p-4 border-radius-10">
+                                Use our RSS feed to stay up to date with what we're sharing.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</PageLayout>
+<style lang="less">
+    .app-bar {
+        border-bottom: 1px solid #e8e8e8!important;
+    }
+</style>
+

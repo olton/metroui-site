@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "build:metro": "rollup -c",
@@ -13,18 +13,25 @@
     "deploy": "npm run build && node ./deploy.js"
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
+    "@astrojs/mdx": "^3.0.1",
+    "@astrojs/rss": "^4.0.6",
+    "@olton/datetime": "^3.0.4",
     "@olton/metroui": "^5.0.6",
+    "@olton/string": "^0.5.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
-    "astro": "^4.8.4",
+    "astro": "^4.9.2",
+    "astro-expressive-code": "^0.35.3",
     "autoprefixer": "^10.4.19",
     "cross-env": "^7.0.3",
+    "dompurify": "^3.1.5",
     "ftp-deploy": "^2.4.7",
+    "fuse.js": "^7.0.0",
     "less": "^4.2.0",
-    "rollup": "^4.17.2",
+    "mdast-util-to-string": "^4.0.0",
+    "reading-time": "^1.5.0",
+    "rollup": "^4.18.0",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-progress": "^1.1.2",
-    "typescript": "^5.4.5"
+    "rollup-plugin-progress": "^1.1.2"
   }
 }

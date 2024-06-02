@@ -1,0 +1,21 @@
+---
+const { url= Astro.request.url, label = 'Share this:', title = 'Metro UI', className = ''} = Astro.props;
+
+const encoded_url = encodeURIComponent(url);
+
+let facebookURL = `https://www.facebook.com/sharer/sharer.php?u=${url}`
+let linkedinURL = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`
+let twitterURL = `https://twitter.com/intent/tweet?url=${url}&text=${title}`
+let redditURL = `https://www.reddit.com/submit?url=${encoded_url}&title=${title}`
+let hackernewsURL = `https://news.ycombinator.com/submitlink?u=${url}&t=${title}`
+---
+<div class={className}>
+    <div class="text-bold reduce-2">{label}</div>
+    <ul class="share-links">
+        <li><a href={facebookURL} target="_blank" title="Share on Facebook"><span class="mif-facebook"></span></a></li>
+        <li><a href={linkedinURL} target="_blank" title="Share on LinkedIn"><span class="mif-linkedin"></span></a></li>
+        <li><a href={twitterURL} target="_blank" title="Share on Twitter"><span class="mif-twitter"></span></a></li>
+        <li><a href={redditURL} target="_blank" title="Share on Reddit"><span class="mif-reddit"></span></a></li>
+        <li><a href={hackernewsURL} target="_blank" title="Share on Hacker News"><span class="mif-cny"></span></a></li>
+    </ul>
+</div>

@@ -1,0 +1,120 @@
+---
+import Page from "../layouts/DefaultPage.astro"
+import {Image} from "astro:assets"
+import { Code } from 'astro:components'
+---
+<Page title="Metro UI - Getting started">
+    <section class="container-fluid mb-10">
+        <div class="container">
+            <div class="hero">
+                <div class="block-center">
+                    <Image src="/images/getting-started.svg" alt="" height="200" width="200" style="transform: scale(1.4)"/>
+                </div>
+                <div class="text-header text-center mt-10 mb-2">
+                    Quick <span class="no-wrap fg-red">&lt;Start&gt;</span>
+                </div>
+                <div class="text-center">
+                    The information below will show you how to quickly get started with Metro UI
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="text-header-2 text-bold mb-4">1. Installation</div>
+            <div class="row">
+                <div class="cell-md-8 pt-10-md">
+                    <div class="text-regular">
+                        To get started with Metro UI, you have three ways to install it:
+                        <ol class="decimal">
+                            <li>Include precompiled Metro UI from CDN</li>
+                            <li>Using source from NPM</li>
+                            <li>Using source from Github (if you want to modify Metro UI)</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="cell-md-4 d-flex flex-align-center flex-justify-center">
+                    <Image src="/images/workflow.svg" alt="Workflow" width="200" height="200" style="transform: scale(1.4)"/>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <div class="text-subheader text-bold mb-4">1.1 Include from CDN</div>
+                <div>
+                    CDN for Metro UI is provided by professional provider <a href="https://keycdn.com">KeyCDN</a>.
+                    KeyCDN is a high performance content delivery network that has been built for the future.
+                </div>
+                <div class="mt-4">
+                    <p>Add to page head tag <kbd>link</kbd> with reference to styles and (if require) icons css files:
+                    <Code class="rounded mt-2" code={`
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
+    <!-- Icons -->                    
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/icons.css">
+                    `} lang="html"/>
+
+                    <p>And before closing tag <kbd>body</kbd> tag script with reference to javascript part of Metro UI:</p>
+                    <Code class="rounded mt-2" code={`
+    <!-- JavaScript -->
+    <script src="https://cdn.metroui.org.ua/current/metro.js"></script>                    
+                    `} lang="html"/>
+                </div>
+                <div class="mt-4">
+                    <div class="remark warning rounded">
+                        <span class="mif-report icon"></span>
+                        <div>
+                            Important! When your use Metro UI from CDN, you receive <kbd>ALL</kbd> functions and components. This has the maximum library size.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <div class="text-subheader text-bold mb-4">1.2 Install from NPM</div>
+                <div class="mt-4">
+                    <p>To install Metro UI from NPM, use next command:
+                    <Code class="rounded mt-2" code={`
+    npm install @olton/metroui                    
+                    `} lang="shell"/>
+
+                    <p>Include Metro UI into your project (all features):</p>
+                    <Code class="rounded mt-2" code={`
+    import "@olton/metroui"                    
+                    `} lang="js"/>
+                </div>
+                <div class="mt-4">
+                    <p>You can also specify individual components:
+                    <Code class="rounded mt-2" code={`
+    /*
+    * Only CSS features
+    */  
+    import "@olton/metroui/reset"                    
+    import "@olton/metroui/common-css/flex" //only css                    
+    import "@olton/metroui/components/grid" //only css                    
+                    `} lang="js"/>
+                    <div>or with js</div>
+                    <Code class="rounded mt-2" code={`
+    /*
+    * CSS features plus JavaScript Component
+    */  
+    import "@olton/metroui/runtime.js" // everything you need for the components to work                    
+    import "@olton/metroui/components/grid" // css component                    
+    import "@olton/metroui/components/accordion" // js component                   
+                    `} lang="js"/>
+                </div>
+                <div class="mt-4">
+                    <div class="remark rounded">
+                        <span class="mif-info icon"></span>
+                        You can find more detailed information about connecting individual Metro UI components in the library <a class="ml-2" href="https://docs.metroui.org.ua">documentation</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid mb-10">
+        <div class="container">
+        </div>
+    </section>
+</Page>

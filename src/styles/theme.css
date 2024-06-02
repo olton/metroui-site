@@ -54,6 +54,12 @@
     font-family: "eUkraine Medium", sans-serif;
 }
 
+.text-header-2 {
+    line-height: 1;
+    font-size: 20px;
+    font-family: "eUkraine Medium", sans-serif;
+}
+
 .text-subheader {
     font-size: 20px;
     line-height: 1;
@@ -92,6 +98,9 @@ body {
 @media screen and (min-width: 768px) {
     .text-header {
         font-size: 56px;
+    }
+    .text-header-2 {
+        font-size: 36px;
     }
     .text-subheader {
         font-size: 28px;
