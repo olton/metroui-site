@@ -1,12 +1,12 @@
 ---
-const { title = 'Metro UI Components Library', description = "", permalink = "", image = "", base } = Astro.props
+const { title = 'Metro UI Components Library', description = "Impressive components library to create web sites from prototyping to production", permalink = "https://metroui.org.ua", image = "/images/metroui-social-card.jpg", base } = Astro.props
 ---
 {base && <base href={base}>}
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/ico" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/strategy.svg">
 <link rel="stylesheet" href="/metro/metro.css">
 
 <meta charset="UTF-8">
@@ -37,3 +37,13 @@ const { title = 'Metro UI Components Library', description = "", permalink = "",
     @import "../styles/common.css";
     @import "../styles/theme.css";
 </style>
+
+<!-- Google tag (gtag.js) -->
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-N08RZ551GL"></script>
+<script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-N08RZ551GL');
+</script>
