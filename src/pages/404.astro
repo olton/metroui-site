@@ -1,0 +1,25 @@
+---
+import Page from "../layouts/DefaultPage.astro"
+import {Image} from "astro:assets"
+---
+<Page>
+    <section class="container-fluid mb-10" style="margin-top: 100px">
+        <div class="container">
+            <div class="hero">
+                <div class="block-center">
+                    <Image src="/images/404.svg" alt="" height="400" width="400" style="transform: scale(1.4)"/>
+                </div>
+            </div>
+
+            <div class="text-subheader text-center">
+                The information you requested was not found or has been moved to another location!
+            </div>
+
+            <div class="mt-10 d-flex flex-justify-center">
+                <a class="button large rounded alert m-1" href="https://github.com/olton/Metro-UI-CSS/archive/refs/heads/master.zip">Download</a>
+                <a class="button large rounded info m-1" href="https://docs.metroui.org.ua">Read Docs</a>
+                <a class="button large rounded success m-1" href="/sandbox">Sandbox</a>
+            </div>
+        </div>
+    </section>
+</Page>
