@@ -10,6 +10,15 @@ body {
     padding: 0;
 }
 
+html:not(.dark-side) {
+    .logo-light-theme {display: block;}
+    .logo-dark-theme {display: none;}
+}
+html.dark-side {
+    .logo-light-theme {display: none;}
+    .logo-dark-theme {display: block;}
+}
+
 .block-center {
     display: flex;
     justify-content: center;
@@ -46,6 +55,7 @@ body {
     transition: border-radius .3s;
     overflow: hidden;
     z-index: 1;
+    position: relative;
     &:hover {
         border-bottom-right-radius: 120px;
     }
@@ -53,7 +63,7 @@ body {
 
 .arrow {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     right: 0;
     display: block;
     color: #df6e68!important;
@@ -81,5 +91,25 @@ body {
         .feature-card__image {
             width: 200px;
         }
+    }
+}
+
+.box-number {
+    color: var(--color-red);
+    font-size: 2rem;
+    font-weight: 700;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+}
+
+.astro-code {
+    border-radius: 10px;
+    code {
+        flex-flow: column;
+        align-items: flex-start;
+        padding: 10px;
+        display: flex;
+        margin: 0;
     }
 }

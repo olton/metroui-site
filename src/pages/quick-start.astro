@@ -24,7 +24,7 @@ import { Code } from 'astro:components'
         <div class="container">
             <div class="text-header-2 text-bold mb-4">1. Installation (5.x)</div>
             <div class="row">
-                <div class="cell-md-8 pt-10-md">
+                <div class="cell-md-8 pt-10-md pr-10-md">
                     <div class="text-regular">
                         To get started with Metro UI, you have three ways to install it:
                         <ol class="decimal">
@@ -48,36 +48,32 @@ import { Code } from 'astro:components'
                 <div class="mt-4">
                     <p>Add to page head tag <kbd>link</kbd> with reference to styles and (if require) icons css files:
                     <Code class="rounded mt-2" code={`
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
-    <!-- Icons -->                    
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/icons.css">
-                    `} lang="html"/>
+<!-- Styles -->
+<link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
+<!-- Icons -->                    
+<link rel="stylesheet" href="https://cdn.metroui.org.ua/current/icons.css">`} lang="html"/>
 
                     <p>And before closing tag <kbd>body</kbd> tag script with reference to javascript part of Metro UI:</p>
                     <Code class="rounded mt-2" code={`
-    <!-- JavaScript -->
-    <script src="https://cdn.metroui.org.ua/current/metro.js"></script>                    
-                    `} lang="html"/>
+<!-- JavaScript -->
+<script src="https://cdn.metroui.org.ua/current/metro.js"></script>`} lang="html"/>
                 </div>
 
                 <div class="mt-4 mb-4">
                     You can load specified version of Metro UI. To get it, you must specify the version number:
                 </div>
                 <Code class="rounded mt-2" code={`
-    <!-- JavaScript -->
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/5.0.6/metro.css">
-    <script src="https://cdn.metroui.org.ua/5.0.6/metro.js"></script>                    
-                    `} lang="html"/>
+<!-- JavaScript -->
+<link rel="stylesheet" href="https://cdn.metroui.org.ua/5.0.6/metro.css">
+<script src="https://cdn.metroui.org.ua/5.0.6/metro.js"></script>`} lang="html"/>
 
                 <div class="mt-4 mb-4">
                     Also can load develop version of Metro UI. To get it, you must specify the <kbd>dev</kbd> branch:
                 </div>
                 <Code class="rounded mt-2" code={`
-    <!-- JavaScript -->
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/dev/metro.css">
-    <script src="https://cdn.metroui.org.ua/dev/metro.js"></script>                    
-                    `} lang="html"/>
+<!-- JavaScript -->
+<link rel="stylesheet" href="https://cdn.metroui.org.ua/dev/metro.css">
+<script src="https://cdn.metroui.org.ua/dev/metro.js"></script>`} lang="html"/>
 
                 <div class="mt-4">
                     <div class="remark warning rounded">
@@ -93,14 +89,10 @@ import { Code } from 'astro:components'
                 <div class="text-subheader text-bold mb-4">1.2 Install from NPM</div>
                 <div class="mt-4">
                     <p>To install Metro UI from NPM, use next command:
-                    <Code class="rounded mt-2" code={`
-    npm install @olton/metroui                    
-                    `} lang="shell"/>
+                    <Code class="rounded mt-2" code={` npm install @olton/metroui `} lang="shell"/>
 
                     <p>Include Metro UI into your project (all features):</p>
-                    <Code class="rounded mt-2" code={`
-    import "@olton/metroui"                    
-                    `} lang="js"/>
+                    <Code class="rounded mt-2" code={` import "@olton/metroui" `} lang="js"/>
                 </div>
             </div>
         </div>
@@ -119,43 +111,38 @@ import { Code } from 'astro:components'
             </div>
             <div class="mt-4">
                 <p>Include Metro UI into your project (all features):</p>
-                <Code class="rounded mt-2" code={`
-    import "@olton/metroui"                    
-                `} lang="js"/>
+                <Code class="rounded mt-2" code={` import "@olton/metroui" `} lang="js"/>
 
                 <p>You can also specify individual components:
                     <Code class="rounded mt-2" code={`
-    /*
-    * Only CSS features
-    */  
-    import "@olton/metroui/reset"                    
-    import "@olton/metroui/common-css/flex" //only css                    
-    import "@olton/metroui/components/grid" //only css                    
-                `} lang="js"/>
+/*
+* Only CSS features
+*/  
+import "@olton/metroui/reset"                    
+import "@olton/metroui/common-css/flex" //only css                    
+import "@olton/metroui/components/grid" //only css`} lang="js"/>
                 <div>or with js</div>
                 <Code class="rounded mt-2" code={`
-    /*
-    * CSS features plus JavaScript Component
-    */  
-    import "@olton/metroui/runtime.js" // everything you need for the components to work                    
-    import "@olton/metroui/components/grid" // css component                    
-    import "@olton/metroui/components/accordion" // js component                   
-                `} lang="js"/>
+/*
+* CSS features plus JavaScript Component
+*/  
+import "@olton/metroui/runtime.js" // everything you need for the components to work                    
+import "@olton/metroui/components/grid" // css component                    
+import "@olton/metroui/components/accordion" // js component`} lang="js"/>
 
             </div>
             <div class="text-subheader text-bold mb-4 mt-10">2.3 i18n</div>
             <div>
                 <p>If you use custom set, you must manually include internationalization modules:
                     <Code class="rounded mt-2" code={`
-    import "@olton/metroui/runtime.js" // everything you need for the components to work          
-              
-    // all modules              
-    import "@olton/metroui/i18n" 
-    
-    // or individual
-    import "@olton/metroui/i18n/de-DE.js" // Deutschland                       
-    import "@olton/metroui/i18n/uk-UA.js" // Ukrainian                       
-                `} lang="js"/>
+import "@olton/metroui/runtime.js" // everything you need for the components to work          
+          
+// all modules              
+import "@olton/metroui/i18n" 
+
+// or individual
+import "@olton/metroui/i18n/de-DE.js" // Deutschland                       
+import "@olton/metroui/i18n/uk-UA.js" // Ukrainian`} lang="js"/>
 
                 <div class="remark rounded">
                     <span class="icon mif-report"></span>Please note that: English i18n module included by default!

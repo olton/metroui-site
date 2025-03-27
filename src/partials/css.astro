@@ -20,7 +20,7 @@ import { Code } from 'astro:components'
                     Variables are divided into global and component variables.
                     <p>Variables names start with the component name and are followed by the name of the property.
                 </div>
-                <div class="border bd-default mt-4">
+                <div class="mt-10">
                     <Code code={`
     :root {
         --body-background: #ffffff;
@@ -28,8 +28,7 @@ import { Code } from 'astro:components'
         --border-color: #e8e8e8;
         --link-color: #5a87cb;
         --link-color-hover: #0056B3FF; 
-    }
-                        `} lang="css" />
+    }`} lang="css" />
                 </div>
             </div>
             <div class="cell-lg-6 border bd-default border-radius-10 p-6">
@@ -43,7 +42,7 @@ import { Code } from 'astro:components'
                     For <kbd>dark</kbd> mode you can define variables inside a <kbd>.dark-side</kbd> class.
                     <p>To switch to <kbd>dark</kbd> mode you must add class <b>.dark-side</b> to <kbd>html</kbd> tag. Also you can use special components that switch mode.
                 </div>
-                <div class="border bd-default mt-4">
+                <div class="mt-4">
                     <Code code={`
     .dark-side {
         --body-background: #1e1f22;
@@ -51,18 +50,14 @@ import { Code } from 'astro:components'
         --border-color: #4a4d51;
         --link-color: #5a87cb;
         --link-color-hover: #0056B3FF;
-    }
-                        `} lang="css" />
+    }`} lang="css" />
                 </div>
             </div>
         </div>
-        <div class="remark rounded mt-4">
-            <span class="mif-report icon"></span>
-            <div>
-                You can override css variables not only in the <kbd>:root</kbd>.
-                If you only need to change one or more components on a page or component(s) in specified area, add your own class to the component (area) and define variables inside that class.
-                More information you can get from <a href="https://docs.metroui.org.ua/">documentation</a>.
-            </div>
+        <div data-role="directive" data-directive="info" data-style="2" class="mt-4" data-title="For information">
+            You can override css variables not only in the <kbd>:root</kbd>.
+            If you only need to change one or more components on a page or component(s) in specified area, add your own class to the component (area) and define variables inside that class.
+            More information you can get from <a href="https://docs.metroui.org.ua/">documentation</a>.
         </div>
     </div>
 </section>
