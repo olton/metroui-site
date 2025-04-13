@@ -20,14 +20,22 @@ import Hero from "../partials/hero.astro"
     <Main/>
     
     <div class="container-fluid pt-10 pb-10">
-        <div class="container p-10">
-            <div class="box rainbow-border">
-                <h1 class="text-center">🥛 Latte</h1>
-                <div class="text-leader text-center text-light">
-                    We use <a href="https://latte.org.ua">Latte</a> to test our code. Latte is a powerful testing framework (from Metro UI author) that allows you to write tests for your applications with ease. It supports testing for: JavaScript, TypeScript, HTML elements (DOM enabled), React Components, and entire web pages with built-in headless browser.
+        <div class="container">
+            <div class="row">
+                <div class="cell-md-6">
+                    <div class="box h-100 d-flex flex-column flex-justify-center">
+                        <h1 class="text-center mt-4">🥛 Latte</h1>
+                        <div class="mt-2">
+                            We use <a href="https://latte.org.ua">Latte</a> to test our code. Latte is a powerful testing framework (from Metro UI author) that allows you to write tests for your applications with ease. 
+                            <p>It supports testing for: JavaScript, TypeScript, HTML elements (DOM enabled), React Components, and entire web pages with built-in headless browser.</p>
+                        </div>
+                        <div class="text-center mt-auto">
+                            <a href="https://latte.org.ua" class="button alert">Get started with Latte</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-center mt-4">
-                    <a href="https://latte.org.ua" class="button alert">Get started with Latte</a>
+                <div class="cell-md-6">
+                    <img src="/images/latte.gif" alt="" class="border-radius-10"/>
                 </div>
             </div>
         </div>
