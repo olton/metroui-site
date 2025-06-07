@@ -18,16 +18,48 @@ import Hero from "../partials/hero.astro"
     <Hero />
     <About/>
     <Main/>
+    <Started/>
     
-    <div class="container-fluid pt-10 pb-10">
+    <div class="container-fluid mb-10 accent-block pt-10 pb-10">
         <div class="container">
-            <h1 class="text-center text-header"><span class="reduce-3">Test <span class="fg-red">&lt;Code&gt;</span></span></h1>
+            <h1 class="text-header"><span class="reduce-3">&lcub;<span class="fg-red">AI</span>.Assistant&rcub;</span></h1>
+            <div class="box">
+                <div class="box-title">Welcome to <span class="fg-red text-bold">AI Assistant</span>!</div>
+                In alpha test started <a href="https://t.me/Metroui_Assistant_bot">Telegram Bot Metro UI Assistant</a>
+
+                <p>
+                    This bot is designed to answer questions about Metro UI and Latte. It bases its answers on the current version of the documentation.
+                    To help the bot understand the context of your question, use the keywords Metro UI and Latte.
+                </p>
+                
+                <p>For example:</p>
+                <pre><code class="w-100">
+    I need help with Metro UI. Tell me about the audio-button component.
+                </code></pre>
+
+                <p>
+                    The bot and documentation are in alpha testing, so please excuse any inaccuracies and inconsistencies. 
+                    The bot runs on the <code>DeepSeek-Chat3:free</code> model and uses MCP <a href="https://context7.com">Context7</a> to search through the documentation.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <Build/>
+    <Structure/>
+    <Css/>
+    <Special />
+    <Action />
+
+    <div class="container-fluid pt-10 pb-10 accent-block">
+        <div class="container">
+            <h1 class="text-header"><span class="reduce-3">&lcub;Testing.<span class="fg-red">Code</span>&rcub;</span></h1>
             <div class="row">
                 <div class="cell-md-6">
                     <div class="box h-100 d-flex flex-column flex-justify-center">
-                        <h1 class="text-center mt-4">🥛 Latte</h1>
+                        <h1 class="text-center mt-4 fg-cyan">🥛 Latte</h1>
                         <div class="mt-2">
-                            We use <a href="https://latte.org.ua">Latte</a> to test our code. Latte is a powerful testing framework (from Metro UI author) that allows you to write tests for your applications with ease. 
+                            We use <a href="https://latte.org.ua">Latte</a> to test our code. Latte is a powerful testing framework (from Metro UI author) that allows you to write tests for your applications with ease.
                             <p>It supports testing for: JavaScript, TypeScript, HTML elements (DOM enabled), React Components, and entire web pages with built-in headless browser.</p>
                         </div>
                         <div class="text-center mt-auto">
@@ -41,13 +73,7 @@ import Hero from "../partials/hero.astro"
             </div>
         </div>
     </div>
-    
-    <Started/>
-    <Build/>
-    <Structure/>
-    <Css/>
-    <Special />
-    <Action />
+
     <Icons />
     <TechnicalPartners />
 

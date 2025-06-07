@@ -94,13 +94,37 @@ html.dark-side {
     }
 }
 
+.box {
+    overflow: hidden;
+    
+    & > * {
+        z-index: 1;
+    }
+}
+
 .box-number {
     color: var(--color-red);
     font-size: 2rem;
     font-weight: 700;
     position: absolute;
     top: 4px;
-    right: 8px;
+    right: 18px;
+}
+
+.box-cog {
+    position: absolute;
+    bottom: -25%;
+    right: -25%;
+    font-size: 10rem;
+    z-index: 0;
+    color: rgba(0, 0, 0, 0.05);
+    animation-duration: 6s;
+}
+
+.dark-side {
+    .box-cog {
+        color: rgba(255, 255, 255, 0.16);
+    }
 }
 
 .astro-code {
