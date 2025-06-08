@@ -1,15 +1,25 @@
 ---
+import {Image} from "astro:assets"
+import icons from "../assets/images/icons.png"
 ---
 <section class="container-fluid mt-20 mb-10">
     <div class="container">
-        <h1 class="text-header"><span class="reduce-3">Metro <span class="fg-red">&lt;Icons&gt;</span></span></h1>
-        <div>
-            Metro Icons is an open source SVG icon library featuring over 800+ glyphs.
-            Use them as icon font options give you vector scaling and easy customization via CSS.
-            You can include icons in your project either using a CDN or using your favorite bundler.
-        </div>
-        <div data-role="directive" data-directive="info" data-style="2" data-title="">
-            You can view all icons on <a href="https://panda.metroui.org.ua/mif/core-pack">this site</a>.
+        <h1 class="text-header text-center"><span class="reduce-3">Metro <span class="fg-red">&lt;Icons&gt;</span></span></h1>
+        <div class="row">
+            <div class="cell-md-4">
+                <Image src={icons} alt="Metro Icons" />
+            </div>
+            <div class="cell-md-8 pl-10-md">
+                <div>
+                    Metro Icons is an open source SVG icon library featuring over 800+ glyphs.
+                    Use them as icon font options give you vector scaling and easy customization via CSS.
+                    You can include icons in your project either using a CDN or using your favorite bundler.
+                </div>
+                                
+                <div data-role="directive" data-directive="info" data-style="2" data-title="">
+                    You can view all icons on <a href="https://panda.metroui.org.ua/mif/core-pack">this site</a>.
+                </div>
+            </div>
         </div>
     </div>
 </section>
