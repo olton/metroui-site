@@ -1,7 +1,7 @@
 ---
 import Page from "../layouts/DefaultPage.astro"
 import {Image} from "astro:assets"
-import { Code } from 'astro:components'
+import {Code} from 'astro:components'
 ---
 <Page title="Metro UI - Donate">
     <section class="container-fluid mb-10">
@@ -20,15 +20,25 @@ import { Code } from 'astro:components'
         </div>
     </section>
 
-    <section class="mb-10">
+    <div class="container">
+        <div class="cutter">
+            <div class="content">
+                Donate with SEPA bank transfer
+            </div>
+        </div>
+    </div>
+    
+    <section>
         <div class="container">
-            <div class="row gap-10">
+            <h2 class="text-center"></h2>
+            <div class="text-center">
+                The Author accepts donations via SEPA bank transfer. Please send payments to:
+            </div>
+
+            <div class="row gap-10 mt-4">
                 <div class="cell-md-6">
-                    <h2>Donate with SEPA bank transfer</h2>
-                    <div>
-                        The Author accepts donations via SEPA bank transfer. Please send payments to:
-                    </div>
                     <div class="box">
+                        <div class="box-title">USD</div>
                         <div class="text-bold">Recipient:</div>
                         <div>Serhii Pimenov</div>
                         <hr class="mt-4 mb-4"/>
@@ -42,25 +52,102 @@ import { Code } from 'astro:components'
                         <div>JSC CB PRIVATBANK</div>
                     </div>
                 </div>
-                
                 <div class="cell-md-6">
-                    <h2>Donate with PayPal</h2>
-                    <div>
-                        You can also support Metro UI development by donating via PayPal to the following email address:
-                    </div>
-                    <div class="box flex-center" style="height: 320px;">
-                        <h2>serhii@pimenov.com.ua</h2>
+                    <div class="box">
+                        <div class="box-title">EUR</div>
+                        <div class="text-bold">Recipient:</div>
+                        <div>Serhii Pimenov</div>
+                        <hr class="mt-4 mb-4"/>
+                        <div class="mt-2 text-bold">IBAN:</div>
+                        <div>UA523052990000026207744445114</div>
+                        <hr class="mt-4 mb-4"/>
+                        <div class="mt-2 text-bold">BIC:</div>
+                        <div>PBANUA2X</div>
+                        <hr class="mt-4 mb-4"/>
+                        <div class="mt-2 text-bold">Bank:</div>
+                        <div>JSC CB PRIVATBANK</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-</Page>
 
-<style>
-    @media screen and (min-width: 768px) {
-        .hero {
-            padding: 80px 40px;
-        }
-    }
-</style>
+    <div class="container mt-10">
+        <div class="cutter">
+            <div class="content">
+                Other ways to support Metro UI
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-10 mb-10">
+        <div class="row">
+            <div class="cell-md-4">
+                <div class="box">
+                    <div class="box-title text-center">Buy Premium Support</div>
+                    <div class="mt-2 d-flex flex-center mt-4">
+                        <a href="https://korzh.com/metroui#licensing" class="button pill-button info">
+                            <span class="mif-link"></span> https://korzh.com/metroui
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cell-md-4">
+                <div class="box">
+                    <div class="box-title text-center">Donate with PayPal</div>
+                    <div class="mt-2 d-flex flex-center mt-4">
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=4AM4GN5YT6EEA" class="button pill-button warning">
+                            <span class="mif-cc-paypal"></span> Donate with PayPal
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cell-md-4">
+                <div class="box">
+                    <div class="box-title text-center">Donate with Patreon</div>
+                    <div class="mt-2 d-flex flex-center mt-4">
+                        <a href="https://patreon.com/metroui" class="button pill-button alert">
+                            <span class="mif-patreon"></span> https://patreon.com/metroui
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--<section class="mb-10">-->
+    <!--    <div class="container">-->
+    <!--        <div class="row gap-10">-->
+    <!--            <div class="cell-md-6">-->
+    <!--            </div>-->
+    <!--            -->
+    <!--            <div class="cell-md-6">-->
+    <!--                <h3>Donate with PayPal</h3>-->
+    <!--                <div>-->
+    <!--                    You can also support Metro UI development by donating via PayPal to the following email address:-->
+    <!--                </div>-->
+    <!--                <div class="box flex-center">-->
+    <!--                    <h4 class="m-0">serhii@pimenov.com.ua</h4>-->
+    <!--                </div>-->
+    <!--                <div class="cutter mt-4"></div>-->
+    <!--                <h3>Donate with Patreon</h3>-->
+    <!--                <div>-->
+    <!--                    You can also support Metro UI development by donating via Patreon:-->
+    <!--                </div>-->
+    <!--                <div class="box flex-center">-->
+    <!--                    <a href="https://patreon.com/metroui"><h4 class="m-0">https://patreon.com/metroui</h4></a>-->
+    <!--                </div>-->
+    <!--                <div class="cutter mt-4"></div>-->
+    <!--                <h3>Buy Premium Support</h3>-->
+    <!--                <div>-->
+    <!--                    You can also buy premium support on:-->
+    <!--                </div>-->
+    <!--                <div class="box flex-center">-->
+    <!--                    <a href="https://korzh.com/metroui#licensing"><h4 class="m-0">https://korzh.com/metroui</h4></a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
+</Page>
