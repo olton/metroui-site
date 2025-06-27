@@ -1,0 +1,66 @@
+---
+import Page from "../layouts/DefaultPage.astro"
+import {Image} from "astro:assets"
+import { Code } from 'astro:components'
+---
+<Page title="Metro UI - Donate">
+    <section class="container-fluid mb-10">
+        <div class="container">
+            <div class="hero">
+                <div class="block-center m-20">
+                    <Image src="/images/donate.png" alt="" height="200" width="200" style="transform: scale(1.4)"/>
+                </div>
+                <div class="text-header text-center mt-10 mb-2 fg-red">
+                    Support Metro UI
+                </div>
+                <div class="text-center mt-4">
+                    If you like Metro UI and want to support its development, you can do it by donating.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-10">
+        <div class="container">
+            <div class="row gap-10">
+                <div class="cell-md-6">
+                    <h2>Donate with SEPA bank transfer</h2>
+                    <div>
+                        The Author accepts donations via SEPA bank transfer. Please send payments to:
+                    </div>
+                    <div class="box">
+                        <div class="text-bold">Recipient:</div>
+                        <div>Serhii Pimenov</div>
+                        <hr class="mt-4 mb-4"/>
+                        <div class="mt-2 text-bold">IBAN:</div>
+                        <div>UA183052990000026204645062053</div>
+                        <hr class="mt-4 mb-4"/>
+                        <div class="mt-2 text-bold">BIC:</div>
+                        <div>PBANUA2X</div>
+                        <hr class="mt-4 mb-4"/>
+                        <div class="mt-2 text-bold">Bank:</div>
+                        <div>JSC CB PRIVATBANK</div>
+                    </div>
+                </div>
+                
+                <div class="cell-md-6">
+                    <h2>Donate with PayPal</h2>
+                    <div>
+                        You can also support Metro UI development by donating via PayPal to the following email address:
+                    </div>
+                    <div class="box flex-center" style="height: 320px;">
+                        <h2>serhii@pimenov.com.ua</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Page>
+
+<style>
+    @media screen and (min-width: 768px) {
+        .hero {
+            padding: 80px 40px;
+        }
+    }
+</style>
