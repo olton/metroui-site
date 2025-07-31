@@ -1,12 +1,6 @@
-<nav data-role="appbar" data-expand-point="lg" class="pt-4 pb-4">
-    <a href="/" class="app-bar-item-static logo-light-theme">
-        <img src="crown-black.svg" alt="Metro UI" width="32" height="32"/>
-    </a>
-    <a href="/" class="app-bar-item-static logo-dark-theme">
-        <img src="crown-white.svg" alt="Metro UI" width="32" height="32"/>
-    </a>
+<nav data-role="appbar" data-expand-point="lg" class="pt-4 pb-4 border-bottom" style="border-color: var(--color-light-red)">
     <a href="/" class="app-bar-item-static">
-        <div class="e-head text-logo enlarge-2" style="line-height: 1">Metro UI<br/>Components Library</div>
+        <img src="/logo.svg" alt="Metro UI" width="32" height="32"/> <span class="ml-1 text-weight-9 enlarge-4 gradient-text gradient-red">Metro UI</span>
     </a>
 
     <button class="hamburger menu-down" onclick="this.parentNode.classList.toggle('active'); this.classList.toggle('active')">
@@ -15,16 +9,18 @@
         <span class="line"></span>
     </button>
 
-    <ul class="app-bar-menu ml-auto">
-        <li><a href="https://v5.metroui.org.ua/getting-started/quick-start/">Quick Start</a></li>
-        <li><a href="https://t.me/Metroui_Assistant_bot" target="_blank">AI Assistant</a></li>
-        <li><a href="https://latte.org.ua" target="_blank">Latte</a></li>
-        <li><a href="https://v5.metroui.org.ua" target="_blank">Docs</a></li>
-        <li><a href="/donate" class="fg-red fg-white-hover">Donate</a></li>
-        <li><a href="https://github.com/olton/metroui" target="_blank" class="button small no-border" style="width: 32px"><span class="mif-github"></span></a></li>
-        <li><a href="https://discord.gg/cxrhV7pGG8" target="_blank" class="button small no-border"><span class="mif-discord"></span></a></li>
-    </ul>
-    <div class="app-bar-item-static ml-auto-fs ml-0-lg">
-        <input type="checkbox" data-role="theme-switcher" data-save-state="true"/>
+    <div class="app-bar-container ml-auto">
+        <ul class="app-bar-menu">
+            <li><a href="https://v5.metroui.org.ua/getting-started/quick-start/">Quick Start</a></li>
+            <li><a href="https://t.me/Metroui_Assistant_bot" target="_blank">AI Assistant</a></li>
+            <li><a href="https://latte.org.ua" target="_blank">Latte</a></li>
+            <li><a href="https://v5.metroui.org.ua" target="_blank">Docs</a></li>
+            <li><a href="/donate" class="fg-red fg-white-hover">Donate</a></li>
+        </ul>
+        <div class="app-bar-item-static">
+            <a href="https://github.com/olton/metroui" target="_blank" class="button small flat" style="width: 32px"><span class="mif-github"></span></a>
+            <a href="https://discord.gg/cxrhV7pGG8" target="_blank" class="button small flat"><span class="mif-discord"></span></a>
+            <input type="checkbox" data-role="theme-switcher" data-save-state="true"/>
+        </div>
     </div>
 </nav>

@@ -1,52 +1,30 @@
----
-import {Image} from "astro:assets"
----
-<section class="container-fluid">
-    <div class="container">
-        <div class="hero">
-            <div class="block-center mt-10">
-                <Image src="/images/strategy.svg" alt="" height="400" width="400" style="transform: scale(1.4)"/>
-            </div>
-            <div class="text-header text-center mt-10">
-                Welcome to <span class="no-wrap fg-red">Metro UI</span>
-            </div>
-            <div class="text-subheader text-center mt-4">
-                    <span data-role="typer" data-delete-delay="2000" data-splitter=";">
-                        First library in Metro Style;
-                        7k+ stars on github;
-                        Expressive coding...;
-                        ...with impressive library;
-                        Choose the right strategy!;
-                        Use Metro UI for your next project!
-                    </span>
-            </div>
-            <div class="mt-10">
-                <ul class="inline-list block-center reduce-2 mt-10 mb-10">
-                    <li><a class="button mini link" href="https://github.com/olton/Metro-UI-CSS/fork"><span class="mif-github mr-1"></span> Fork</a></li>
-                    <li>/</li>
-                    <li><a class="button mini link" href="https://github.com/olton/Metro-UI-CSS/archive/refs/heads/master.zip"><span class="mif-download mr-1"></span> Download</a></li>
-                    <li>/</li>
-                    <li><a class="button mini link" href="https://github.com/olton/Metro-UI-CSS/discussions"><span class="mif-chat mr-1"></span> Discuss</a></li>
-                </ul>
-            </div>
-
-            <div class="row">
-                <div class="cell-md-3"></div>
-                <div class="cell-md-6">
-                    <div class="d-flex flex-row">
-                        <div class="m-1 p-2 border bd-default text-center w-100 c-pointer alert border-radius-10" data-copy-to-clipboard="npm i @olton/metroui">
-                            <div>npm i @olton/metroui</div>
-                            <div class="reduce-4">click to copy to clipboard</div>
-                        </div>
-
-                        <div class="m-1 p-2 border bd-default text-center w-100 c-pointer border-radius-10" style="background-color: #2BC4CE; color: #fff;" onclick="window.location.href = `https://v5.metroui.org.ua`">
-                            <div>Quick Start</div>
-                            <div class="reduce-4">click to open</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell-md-3"></div>
-            </div>
-        </div>
+<div class="hero d-flex flex-column flex-center">
+    <div class="d3 gradient-text gradient-red" >Metro UI</div>
+    <div class="d2 text-center" style="line-height: 1">
+        <div class="text-center">The components</div>
+        your site <span class="gradient-text gradient-red text-weight-9">Deserves!</span>
     </div>
-</section>
+    
+    <div class="d-flex flex-center gap-2 mt-10">
+        <button class="alert pill-button"><span class="mif-rocket icon"></span>Getting Started</button>
+        <button class=" pill-button gradient-border animated-border bg-default"><span class="mif-robot icon"></span>AI Assistant</button>
+    </div>
+    
+    <div class="mt-10">
+        <ul class="inline-list block-center reduce-2 mt-10 mb-10">
+            <li><a class="button mini link" href="https://github.com/olton/Metro-UI-CSS/fork"><span class="mif-github mr-1"></span> Fork</a></li>
+            <li>/</li>
+            <li><a class="button mini link" href="https://github.com/olton/Metro-UI-CSS/archive/refs/heads/master.zip"><span class="mif-download mr-1"></span> Download</a></li>
+            <li>/</li>
+            <li><a class="button mini link" href="https://github.com/olton/Metro-UI-CSS/discussions"><span class="mif-chat mr-1"></span> Discuss</a></li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    @media (min-width: 768px) {
+        .hero {
+            padding: 120px;
+        }
+    }
+</style>
